@@ -1,0 +1,82 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* our styles goes in here */
+    background-color: #111;
+    color: #efeded;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container{
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    height: 70vh;
+    margin-top: 150px;
+    padding: 25px;
+
+}
+
+.left{
+    flex: 1;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+
+    font-family: "Lobster", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    /* background-color: teal; */
+    /* display: flex;
+    flex-direction: column; */
+    /* gap: 16px; */
+}
+.left .hi{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.left .name{
+color: orange;
+font-size: 23px;
+}
+
+.left .title{
+    font-size: 90px;
+    /* font-family: "Roboto", sans-serif */
+}
+
+.left .title2{
+    font-size: 90px;
+    margin-left: 270px;
+    /* font-family: "Roboto", sans-serif */
+}
+.left .desc{
+    margin-top: 12px;
+    font-size: 20px;
+}
+
+.left .btn{
+    color: white;
+    background-color: orangered;
+    margin-top: 22px;
+    padding: 12px 34px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: 1s all ease-in-out;
+    border: none;
+    outline: none;
+}
+.left .btn:hover{
+    background-color: red;
+    transform: translateY(12px);
+}
+/* styling the left hand side */
+
+
+
+.right {
+    flex: 1;
+    /* background-color: yellow; */
+}
