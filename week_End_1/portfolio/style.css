@@ -12,6 +12,44 @@ body{
     margin: 0 auto;
 }
 
+/* navbar , before the container */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+}
+
+.navbar .logo{
+    width: 50px;
+    height: 50px;
+    background-color: orangered;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.navbar .navLinks{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .navLinks .link{
+    text-decoration: none;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.cv{
+    background-color: orangered;
+    padding: 12px 34px;
+    color: white;
+}
+
 .container{
     width: 100%;
     /* background-color: red; */
@@ -55,6 +93,7 @@ font-size: 23px;
 .left .desc{
     margin-top: 12px;
     font-size: 20px;
+    
 }
 
 .left .btn{
@@ -79,4 +118,47 @@ font-size: 23px;
 .right {
     flex: 1;
     /* background-color: yellow; */
+    padding-left: 21px;
 }
+.right .img{
+width: 100%;
+border-radius: 36px;
+height: 100%;
+object-fit: cover;
+border-radius: 12px;
+border: 13px solid orangered;
+
+}
+
+/*icons */
+
+.right .icons{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+.right .icons .icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid orangered;
+    background-color: white;
+    padding: 6px;
+    /* dont rwrite this one */
+    position: relative;
+
+}
+
+.right .icons .icon:hover{
+    content: 'RIGHT';
+    /* position: absolute; */
+    /* left: 0;
+    top: 0;
+    width:100%;
+    height: 100%;
+    background-color: orangered;
+    opacity: 0.5;
+    cursor: pointer; */
+} 

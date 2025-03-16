@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border;
+}
+
+/* setting up variables in css */
+:root {
+    --bg-color: #e9e1e1;
+    --primary-color:#041575;
+    /* set more variables here */
+}
+
+body{
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--bg-color);
+}
+
+
+
+
+
+/* start with the product section */
+
+.page{
+    display: flex;
+    justify-content: center;
+    margin-top: 44px;
+    flex-direction: column;
+    align-items: center;
+}
+.page .search{
+    display: flex;
+    gap: 6px;
+    background-color: #fff;
+    align-items: center;
+    /* border-radius: 12px; */
+
+}
+/* how to style search input in css */
+.page .search input{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 12px 44px;
+    background-color: #fff;
+    font-size: 23px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    
+}
+
+.search span{
+    padding-right: 12px;
+    font-size: 23px;
+}
+
+.products{
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+}
+
+.products .card{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 400px;
+    padding: 12px;
+    transition: 0.4s all ease-in;
+    cursor: pointer;
+
+}
+.products .card:hover{
+    transform: translateY(-8px);
+}
+
+.products .card .picture{
+    width: 100%;
+}
+
+.picture img{
+    width: 100%;
+}
+.Pname{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+.desc{
+    margin-bottom: 12px;
+}
+
+.btn{
+    padding: 12px 23px;
+    cursor: pointer;
+    margin-top: 4px;
+    background-color: #21077c;
+    border: none;
+    outline: none;
+    color: white;
+    transition: 1s all ease-in;
+}
+.btn:hover{
+    background-color: #3249cc;
+}
