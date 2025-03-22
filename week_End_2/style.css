@@ -35,7 +35,10 @@ body{
     gap: 6px;
     background-color: #fff;
     align-items: center;
+    width: 100%;
+    max-width: 600px;
     /* border-radius: 12px; */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
 }
 /* how to style search input in css */
@@ -43,10 +46,11 @@ body{
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 12px 44px;
+    padding: 10px 15px;
     background-color: #fff;
     font-size: 23px;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    
     
 }
 
@@ -58,7 +62,7 @@ body{
 .products{
     margin-top: 45px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 100%;
 }
 
@@ -66,10 +70,11 @@ body{
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    width: 400px;
+    /* width: 400px; */
     padding: 12px;
     transition: 0.4s all ease-in;
     cursor: pointer;
+    height: 100%;
 
 }
 .products .card:hover{
@@ -78,10 +83,13 @@ body{
 
 .products .card .picture{
     width: 100%;
+    height: 200px;
 }
 
 .picture img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .Pname{
     font-size: 20px;
@@ -105,3 +113,51 @@ body{
 .btn:hover{
     background-color: #3249cc;
 }
+
+
+
+/* syntax of media queries in css */
+
+@media (max-width:1080px) {
+
+    /* apply this styles */
+    body {
+        background-color: red;
+    }
+    .products{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+        padding: 12px;
+    }
+    .products .card{
+        margin-bottom: 12px;
+        
+    }
+    .products .card .Pname{
+        color: red;
+    }
+
+
+
+
+}
+@media (max-width:580px){
+    /* apply this styles */
+    body{
+        background-color: red;
+    }
+    .products{
+        grid-template-columns:1fr;
+    }
+    p{
+        color: black;
+        font-weight: bold;
+    }
+    
+
+
+}
+
+/* @media (max-width:430px){
+
+} */

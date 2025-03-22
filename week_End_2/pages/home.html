@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-iws</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <div class="hero">
+        <div class="bg"></div>
+        <div class="textContainer">
+            <h1>Welcome to IWS WOC MARKET</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere distinctio optio error sed quam.</p>
+            <div class="btn" id="getStartedBtn">Get started</div>
+        </div>
+    </div>
+
+    <!-- Registration Popup -->
+    <div class="popup" id="registerPopup">
+        <div class="popup-content">
+            <span class="close-btn" id="closePopup">&times;</span>
+            <h2>Register</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" required>
+                </div>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="home.js"></script>
+</body>
+
+</html>
